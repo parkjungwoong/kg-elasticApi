@@ -134,4 +134,13 @@ public class DemoApplicationTests {
 		System.out.println(result);
 	}
 
+	@Test
+	public void 인덱스_조회() {
+		String url = "/_cat/indices?v&pretty";
+
+		Map result = elApi.callElasticApi("GET",url, null,null);
+
+		System.out.println(result);
+	}
+
 }

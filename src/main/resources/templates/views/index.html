@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Log</title>
+
+    <link th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"	rel="stylesheet" />
+    <link th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css}"	rel="stylesheet" />
+</head>
+
+<body>
+
+<script th:src="@{/webjars/jquery/2.1.1/jquery.js}"></script>
+<script th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.js}"></script>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">NB Log</a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+
+            <div class="navbar-form navbar-right btn-group">
+                <!--<button type="button" class="btn btn-default">Button 1</button>-->
+                <!--<button type="button" class="btn btn-default">Button 2</button>-->
+                <!--<button type="button" class="btn btn-default">Button 3</button>-->
+            </div>
+
+            <form class="navbar-form">
+                <div class="form-group" style="display:inline;">
+                    <div class="input-group">
+                        <select class="form-control nav navbar-nav navbar-left">
+                            <option>커피빈 API</option>
+                            <option>커피빈 POS</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <select class="form-control nav navbar-nav navbar-left">
+                            <option>18.06.21</option>
+                            <option>18.06.27</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</nav>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>수집 로그</td>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>[2018-06-27 18:50:03.973][ INFO](BaseAction.java:160) - [180627185001963-44284] com.ta.biz.cfb.set.action.CFB7000Action *** 수행시간 [액션-전체: 9ms, 액션-순수: 9ms, Remote: 0ms]</td>
+    </tr>
+    <tr>
+        <td>[2018-06-27 18:50:01.973][ INFO](BaseAction.java:160) - [180627185001963-44284] com.ta.biz.cfb.set.action.CFB7000Action *** 수행시간 [액션-전체: 9ms, 액션-순수: 9ms, Remote: 0ms]</td>
+    </tr>
+    <tr>
+        <td>[2018-06-27 18:50:31.981][DEBUG](JakartaCommonsLoggingImpl.java:27) - {rset-236559} Result: [2.2.1, https://play.google.com/store/apps/details?id=com.coffeebeankorea.android]</td>
+    </tr>
+    <tr>
+        <td>[2018-06-27 18:51:01.955][DEBUG](CommonsLogger.java:76) - Creating an DefaultActionProxy for namespace [/set] and action name [CFB7000]</td>
+    </tr>
+    <tr>
+    <tr>
+        <td>[2018-06-27 18:51:01.981][ INFO](BaseAction.java:160) - [180627185101965-44286] com.ta.biz.cfb.set.action.CFB7000Action *** 수행시간 [액션-전체: 16ms, 액션-순수: 16ms, Remote: 0ms]</td>
+    </tr>
+    <tr>
+        <td>[2018-06-27 18:51:03.981][ INFO](BaseAction.java:160) - [180627185101965-44286] com.ta.biz.cfb.set.action.CFB7000Action *** 수행시간 [액션-전체: 16ms, 액션-순수: 16ms, Remote: 0ms]</td>
+    </tr>
+        <td>[2018-06-27 18:51:04.981][ INFO](BaseAction.java:160) - [180627185101965-44286] com.ta.biz.cfb.set.action.CFB7000Action *** 수행시간 [액션-전체: 16ms, 액션-순수: 16ms, Remote: 0ms]</td>
+    </tr>
+    <tr>
+        <td>[2018-06-27 18:51:00.981][ INFO](BaseAction.java:160) - [180627185101965-44286] com.ta.biz.cfb.set.action.CFB7000Action *** 수행시간 [액션-전체: 16ms, 액션-순수: 16ms, Remote: 0ms]</td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+</body>
+</html>
